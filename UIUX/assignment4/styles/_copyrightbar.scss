@@ -1,0 +1,32 @@
+@import 'colors';
+
+.copyrightbar{
+    background-color: $darkgreen;
+    color: white;
+    height: 25px;
+    font-size: 12px;
+    align-content: center;
+    text-decoration: none;
+    
+    .copyright{
+        top: 3px;
+        position: relative;
+        left: 50px;
+    }
+
+    .terms{
+        top: 3px;
+        position: relative;
+        left: 550px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .privacy{
+        top: 3px;
+        position: relative;
+        left: 550px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

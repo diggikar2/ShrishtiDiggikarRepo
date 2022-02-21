@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/styles.css">
+  <!-- <link rel="stylesheet" href="./test/styles1.css"> -->
+  <!-- <link rel="stylesheet" href="/styles3/main.css"> -->
+  <title>Assignment 4</title>
+</head>
+
+<body>
+  <!--Navbar Section-->
+  <nav class="navbar">
+    <img src="./images/Group 16059@2x.png" href="/" class="navbar__logo" width="300" height="70"></a>
+    <a href="" class="navbar__bars"></a>
+    <div class="navbar__menu">
+      <img src="./images/gb.png" href="/" class="navbar__menu--links">
+      <ul class="currencydropdown">
+        <li>
+          <a href="/">EN/USD</a>
+          <ul class="nav__sub-menu">
+            <li>
+              <a href="/">EN/EUR</a>
+            </li>
+            <li>
+              <a href="/">EN/GBP</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <a href="/" class="navbar__menu--links">Business</a>
+      <a href="/" class="navbar__menu--links">Help</a>
+      <a href="/" class="navbar__menu--links">Register</a>
+      <a href="/" class="navbar__menu--links" id="button">Sign in</a>
+    </div>
+  </nav>
+  <nav class="navbar2">
+    <!-- <a href="" class="nav__bars2"></a> -->
+    <div class="navbar2__menu2">
+      <a href="/" class="navbar2__menu2--links2">UK Trains &nbsp;<img src="images/path.png"></a>
+      <a href="/" class="navbar2__menu2--links2">Europern Trains &nbsp;<img src="images/path.png"></a>
+      <a href="/" class="navbar2__menu2--links2">Train Companies &nbsp;<img src="images/path.png"></a>
+      <a href="/" class="navbar2__menu2--links2">Popular Journeys &nbsp;<img src="images/path.png"></a>
+    </div>
+  </nav>
+  <div class=parent>
+    <img class="image1" src="homepage/homepage/Rectangle 109@2x.png" width="1350" height="750" />
+    <img class="image2" src="homepage/homepage/nick-page-4iZrQRh5gb4-unsplash.png" width="900" height="500" />
+    <img class="image3" src="homepage/homepage/nick-page-1.png" width="900" height="500" />
+    <label class="explore">Explore Europe effortlessly by train and bus</label>
+    <!-- <img class="image4" src="homepage/homepage/Explore Europe effortlessly by train and bus.png"> -->
+    <lable class="save">Save 61% on average when you book in advance*</lable>
+    <!-- <img class="image5" src="homepage/homepage/Save -1@2x.png" width="400" /> -->
+    <!-- <img class="image6" src="homepage/homepage/Rectangle 165.png" width="100" height="50" /> -->
+    <!--adding navigate to learn more page-->
+    <a href="#">
+      <button class="image7" width="75" height="15">Learn More</button>
+    </a>
+    <form class="form_element">
+      <form action="table.html" method="POST">
+          <br>
+          <fieldset>
+              <legend>Departure and Arrival Station</legend>
+              <label for="departure">Departure</label>
+              <input type="text" id="departure" name="departure" placeholder="Departure Station Name" required>
+
+              <label for="arrival">Arrival</label>
+              <input type="text" id="arrival" name="arrival" placeholder="Arrival Station Name" required>
+
+              <input type="radio" required>
+              <label for="oneway">One Way</label>
+
+
+              <input type="radio" required>
+              <label for="return">Return</label>
+
+          </fieldset>
+
+          <fieldset>
+              <legend>Via/Avoid</legend>
+              <input type="checkbox" id="via/avoid" name="gender">
+              <label for="via/avoid">Via/Avoid &nbsp;&nbsp;</label>
+
+              <label for="dropdown" &nbsp;&nbsp;></label>
+              <select name="dropdown" id="dropdown">
+                  <option value="via">Via</option>
+                  <option value="avoid">Avoid</option>
+              </select>
+
+              <input type="text" id="enterStation" name="enterStation" placeholder="Enter Station">
+
+          </fieldset>
+
+          <fieldset>
+              <legend>Date and Time of Departure</legend>
+              <label for="dod">Date of Departure</label>
+              <input type="date" id="start" name="trip-start" value="2022-02-02" min="2022-02-02">
+              <label for="dropdown1"></label>
+              <select name="dropdown1" id="dropdown1">
+                  <option value="Leaving At">Leaving at</option>
+                  <option value="Arriving At">Arriving at</option>
+              </select>
+              <select name="hourdropdown" id="timedropdown">
+                  <option value="00">00</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">80</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+              </select>
+
+              <label>:</label>
+
+              <select name="minutedropdown" id="minutedropdown">
+                  <option value="00">00</option>
+                  <option value="15">15</option>
+                  <option value="30">30</option>
+                  <option value="45">45</option>
+              </select>
+          </fieldset>
+
+          <fieldset>
+              <legend>Date and Time of Arrival</legend>
+              <label for="dod">Date of Arrival</label>
+              <input type="date" id="start" name="trip-start" value="2022-02-02" min="2022-02-02">
+              <label for="dropdown1"></label>
+              <select name="dropdown1" id="dropdown1">
+                  <option value="Leaving At">Leaving at</option>
+                  <option value="Arriving At">Arriving at</option>
+              </select>
+
+              <select name="hourdropdown" id="timedropdown">
+                  <option value="00">00</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">80</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+              </select>
+
+              <label>:</label>
+
+              <select name="minutedropdown" id="minutedropdown">
+                  <option value="00">00</option>
+                  <option value="15">15</option>
+                  <option value="30">30</option>
+                  <option value="40">45</option>
+              </select>
+
+          </fieldset>
+
+          <fieldset>
+              <legend>Add Passengers</legend>
+              <label for="adults">Adults</label>
+              <select>
+
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+              </select>
+              <label for="Children">Children</label>
+              <select>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+              </select>
+              <label for="Children under 2">Children under 2</label>
+              <select>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+              </select>
+          </fieldset>
+          <button class="submit" type="submit">Submit</button>
+          <button class="reset" type="reset">Clear</button>
+      </form>
+      <!-- <img class="image8" src="homepage/homepage/Group 9662.png" width="400" height="400"> -->
+      <!--adding form navgation to book trains-->
+      <!-- <a href="form.html">
+          <img class="image9" src="homepage/homepage/Get times & tickets.png" />
+      </a> -->
+      <img class="image10" src="homepage/homepage/trian_PNG-1.png" width="400" height="200" />
+  </div>
+  <div class="repeat_london">
+    <!-- <img class="rounded_rect" src="homepage/homepage/roundedRect.png" width="300" height="200"/> -->
+
+    <span class="dot"></span>
+    <img class="whiterect1" src="homepage/homepage/clipart3020182.png" alt="">
+    <a href="newpage.html"><img class="london1" src="homepage/homepage/london.jpg"></a>
+    <img class="greencircle1" src="homepage/homepage/Ellipse 11.png">
+    <img class="train1" src="homepage/homepage/-train_90433.png" />
+    <img class="whiterect2" src="homepage/homepage/clipart3020182.png" alt="">
+    <a href="newpage.html"><img class="london2" src="homepage/homepage/london.jpg"></a>
+    <img class="greencircle2" src="homepage/homepage/Ellipse 11.png">
+    <img class="train2" src="homepage/homepage/-train_90433.png" />
+    <img class="whiterect3" src="homepage/homepage/clipart3020182.png" alt="">
+    <a href="newpage.html"><img class="london3" src="homepage/homepage/london.jpg"></a>
+    <img class="greencircle3" src="homepage/homepage/Ellipse 11.png">
+    <img class="train3" src="homepage/homepage/-train_90433.png" />
+    <label class="l2l1">London to Liverpool</label>
+    <label class="from1">from $75.08</label>
+    <label class="l2l2">London to Liverpool</label>
+    <label class="from2">from $75.08</label>
+    <label class="l2l3">London to Liverpool</label>
+    <label class="from3">from $75.08</label>
+    <!--navigate to view all html page-->
+    <img class="threedots" src="homepage/homepage/Group 9846.png">
+    <a href="viewall.html"><button class="viewallButton">View All </button></a>
+    <!--INFO6150 ASSIGNMENT 3 FOR SHRISHTI DIGGIKAR-->
+  </div>
+  <div class="compare">
+    <img src="homepage/homepage/Group 9809.png" width="1300px" height="300px">
+  </div>
+  <div class="blueRect">
+    <div class="greenRect">
+      <label class="exploreEurope">Explore Europe effortlessly by trains and bus</label>
+      <label class="save1">Save 61% on average when you book in advance</label>
+      <a href="getmoredetails.html"><button class="detailsButton" width="200px">Get More Details</button></a>
+      <img class="image20" src="homepage/homepage/Repeat Grid 19.png" />
+      <img class="image21" src="homepage/homepage/trian_PNG-1.png" width="200" height="150" />
+      <img class="image22"
+        src="homepage/homepage/woman-hungarian-parliament-budapest-hungary-shutterstock_1118873774-1024x683.png" />
+    </div>
+    <div class="help_page">
+      <label class="help">We're here to help</label><br>
+      <label>Find clear<a href="faq.html"> FAQ'S</a> online and customer service<br>available at the end of phone 7
+        days a<br> week</label>
+      <img class="image25" src="homepage/homepage/illu_laptop_help.png" width="200" />
+      <a href="cta.html"><button CLASS="ctaButton">CTA Button</button></a>
+      <div class="collapse1">
+        <button class="collapsible">Do I need to confirm in advance if travelling on a different train?</button>
+        <div class="content">
+          <p>Answer to the question!</p>
+        </div>
+        <br>
+        <br>
+        <button type="button" class="collapsible">How much luggage can I take on the train?</button>
+        <div class="content">
+          <p>Answer to the question!</p>
+        </div>
+        <br>
+        <br>
+        <button type="button" class="collapsible">How will I receive my tickets?</button>
+        <div class="content">
+          <p>Answer to the question!</p>
+        </div>
+        <br>
+        <br>
+        <button type="button" class="collapsible">What do the different seat options mean?</button>
+        <div class="content">
+          <p>Answer to the question!</p>
+        </div>
+        <br>
+        <br>
+
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+        </script>
+      </div>
+
+    </div>
+  </div>
+  <div class="mobile">
+    <label class="leading">Europe's leading train and <br>bus app</label>
+    <img class="image30" src="homepage/homepage/mobile3.png" width="300" />
+    <label class="keepYourTrip">Keep your trip on track with departure times, platform info, and tickets<br>in the
+      palm of your hand</label>
+    <!--added navigation to apple app store-->
+    <a href="https://www.apple.com/app-store/"><img class="image32" src="homepage/homepage/Group 9691.png"
+        width="200" /></a>
+    <!--added navigation to google play store-->
+    <a href="https://play.google.com/store/apps?hl=en_US&gl=US"><img class="image33"
+        src="homepage/homepage/Group 9693.png" width="200" /></a>
+
+    <img class="image34" src="homepage/homepage/Group 9808.png" width="40" />
+    <img class="image35" src="homepage/homepage/Group 9807.png" width="40" />
+  </div>
+  <div class="container">
+    <div class="table-row">
+      <div class="table-cell">
+        <label class="happy">
+          We are happy when our customers are!<br><br>
+        </label>
+        <img class="train" src="homepage/homepage/Group 16060.png"><br><br>
+        <label class="register1" >
+          Greenline.com Limted is registered in England<br></label>
+          <label class="register2">and Wales. Company No. 3846791.<br><br></label>
+        </label>
+        <label class="address1">
+          Registered address:<br>
+        </label>
+        <label class="address2">3rd floor, 120 Holborn, London EC1N 2TD, United<br></label>
+         <label class="address3">Kingdom. VAT Number: 791^^ 7261 06.</label>
+        <br>
+        <br>
+         <div class="socials">
+           <a href="https://www.facebook.com/"><img class="fb" src="homepage/homepage/Group 9740.png" height="30"></a>&nbsp;
+           <a href="https://twitter.com/"><img class="twitter" src="homepage/homepage/Group 9741.png" height="30"></a>&nbsp;
+           <a href="https://www.instagram.com/"><img class="insta" src="homepage/homepage/Group 9742.png" height="30"></a>&nbsp;
+           <a href="https://telegram.org/"><img class="telegram" src="homepage/homepage/Group 9743.png" height="30"></a>
+         </div>
+      </div>
+      <div class="table-cell">
+        <label class="cell2">
+          <a href="#">About Greenline</a>
+          <br><br>
+          <a href="#">News</a>
+          <br><br>
+          <a href="#">Investors</a>
+          <br><br>
+          <a href="#">Careers</a>
+          <br><br>
+          <a href="#">Greenline Partner Solutions</a>
+          <br><br>
+          <a href="#">Affiliants and Partnerships</a>
+          <br><br>
+          <a href="#">Terms and conditions / Security</a>
+          <br><br>
+          <a href="#">Privacy / Cookies</a>
+          <br><br>
+          <a href="#">Modern Slaver Act (UK)</a>
+        </label>
+      </div>
+      <div class="table-cell">
+        <a href="#"><button class="button10">Helpful and useful information</button><br><br></a>
+        <a href="#"><button class="button20">Train and bus companies</button><br><br></a>
+        <a href="#"><button class="button30">Train journeys in the UK</button><br><br></a>
+        <a href="#"><button class="button40">Train and buses in Europe</button><br><br></a>
+        <a href="#"><button class="button50">Top destinations</button><br><br></a>
+        <a href="#"><button class="button60">Stations</button><br><br></a>
+        <div class="dropdown-content60">
+          Answer to the question!
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyrightbar">
+    <label class="copyright">Copyright © 2021 Greenline.com Limited and its affiliated companies. All rights reserved.</label>
+    <a href="#"><label class="terms">Terms & Conditions |</label></a>
+    <a href="#"><label class="privacy">Privacy Policy</label></a>
+  </div>
+</body>
+</html>
